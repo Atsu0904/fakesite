@@ -1,0 +1,179 @@
+<html lang="jp" dir="ltr">
+  <head>
+    <script language="javascript" type="text/javascript">
+        function OnButtonClick() {
+            target = document.getElementById("output");
+            target.innerHTML = "Penguin";
+        }
+    </script>
+    <meta charset="utf-8">
+    <title>適当な掲示板集</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body>
+
+
+
+
+    <div class="popup" id="js-popup">
+  <div class="popup-inner">
+    <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+    <a href="#"><img src="https://liginc.co.jp/files/keywordmarketing/images/overlay-banner.jpg" alt="うざい広告" width="300" height="250"></a>
+  </div>
+  <div class="black-background" id="js-black-bg"></div>
+</div>
+<style type="text/css">
+.popup {
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 9999;
+opacity: 0;
+visibility: hidden;
+transition: .6s;
+}
+.popup.is-show {
+opacity: 1;
+visibility: visible;
+}
+.popup-inner {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 80%;
+max-width: 600px;
+padding: 50px;
+background-color: #fff;
+z-index: 2;
+}
+.popup-inner img src="https://liginc.co.jp/files/keywordmarketing/images/overlay-banner.jpg"
+width: 100%;
+}
+.close-btn {
+position: absolute;
+right: 0;
+top: 0;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+cursor: pointer;
+}
+.close-btn i {
+font-size: 20px;
+color: #333;
+}
+.black-background {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,.8);
+z-index: 1;
+cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+window.onload = function() {
+var popup = document.getElementById('js-popup');
+if(!popup) return;
+popup.classList.add('is-show');
+
+var blackBg = document.getElementById('js-black-bg');
+var closeBtn = document.getElementById('js-close-btn');
+
+closePopUp(blackBg);
+closePopUp(closeBtn);
+
+function closePopUp(elem) {
+  if(!elem) return;
+  elem.addEventListener('click', function() {
+    popup.classList.remove('is-show');
+  })
+}
+}
+
+</script>
+    <div id="alert" class="modal-footer">
+
+    </div>
+  </div>
+
+    <div class="container">
+      <h1>適当な掲示板集</h1>
+      <p class="flow-text"><font size="5">一般的な掲示板のまとめサイトです。</font></p>
+      <p class="flow-text"><font size="2">掲示板を作ろうとしたんですが、めんどくさくなったので断念しました</font></p>
+      <p class="flow-text"><font size="2">iPhoneを横にしてお使い下さい</p>
+      <p class="flow-text"><font size="2">※時々読み込まれない事があります。</p>
+      <table border="1">
+   <tr>
+    <th>サイト名</th>
+    <th>リンク</th>
+    <th>説明</th>
+   </tr>
+   <tr>
+    <td>2ch</td>
+    <td><button class="btn" onclick="if (confirm('あなたのお使いのiPhoneがウイルスに感染しました「OK」を押して保護してください。')) location.href='https://atsu0904.github.io/nobaman-nannkinnko-suta-/'" type="button">2chへ</</td>
+    <td>日本で一番有名な掲示板らしい</td>
+   </tr>
+   <tr>
+     <td>5ch</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">5chへ</a></td>
+     <td>2chの進化バージョンみたいなやつ</td>
+   </tr>
+   <tr>
+     <td>4ch</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">4chへ</a></td>
+     <td>海外版2ch、ここでアノニマスが結成されたとか</td>
+   </tr>
+
+   <tr>
+     <td>FC2</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">FC2へ</a></td>
+     <td>初心者に優しいらしい、あと無料</td>
+   </tr>
+   <tr>
+     <td>Rara</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">raraへ</a></td>
+     <td>なんかいろいろ出来るらしい</td>
+   </tr>
+   <tr>
+     <td>喜久屋</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">喜久屋へ</a></td>
+     <td>パスワードで保護されるので安心安全</td>
+   </tr>
+   <tr>
+     <td>せっかく掲示板</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">せっかくへ</a></td>
+     <td>20年以上運営されてるらしい</td>
+   </tr>
+   <tr>
+     <td>Z-Z BOARD</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">Z-Zへ</a></td>
+     <td>全てのデバイスに対応してるらしい</td>
+   </tr>
+   <tr>
+     <td>したらば掲示板</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">したらばへ</a></td>
+     <td>2ch風の掲示板</td>
+   </tr>
+   <tr>
+     <td>ZawaZawa</td>
+     <td><a class="btn" href="https://piv.pivpiv.dk/">Zawaへ</a></td>
+     <td>掲示板とかを作れるらしい</td>
+   </tr>
+    </table>
+      <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       </div>
+
+    </body>
+
+
+  </html>
